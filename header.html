@@ -1,16 +1,51 @@
 <div class="container row ">
     <div class="h_firstSection col-3">
-    <div class="h_logo"></div>
+        <a href="./index.html">
+            <div class="h_logo"></div>
+        </a>
+    </div>
+    <div class="h_secondSection col-6 d-flex">
+        <a href="./summary.html" id="h_summary">Summary</a>
+        <a href="./service.html" id="h_service">Service</a>
+        <a href="./technology.html" id="h_technology">Technology</a>
+        <a href="./alliance.html" id="h_alliance">Alliance</a>
+        <a href="./press.html" id="h_press">Press</a>
+    </div>
+    <div class="h_thirdSection col-3 d-flex">
+        <a href="/" class="h_whitePaper">WHITEPAPER</a>
+        <div class="h_language" href="/">ENGLISH</div>
+    </div>
 </div>
-<div class="h_secondSection col-6 d-flex">
-    <a href="/">Summary</a>
-    <a href="/">Service</a>
-    <a href="/">Technology</a>
-    <a href="/">Alliance</a>
-    <a href="/">Press</a>
-</div>
-<div class="h_thirdSection col-3 d-flex">
-    <a href="/" class="h_whitePaper">WHITEPAPER</a>
-    <div class="h_language" href="/">ENGLISH</div>
-</div>
-</div>
+
+<script type="text/javascript">
+    (function () {
+        "use strict";
+
+        $(function () {
+            let page = location.href.split('/')[4].split('.')[0]
+
+            switch (page) {
+                case 'summary' :
+                    $('#h_summary').css('color', '#2b80eb')
+                    break
+
+                case 'service' :
+                    $('#h_service').css('color', '#2b80eb')
+                    break
+
+                case 'technology' :
+                    $('#h_technology').css('color', '#2b80eb')
+                    break
+
+                case 'alliance' :
+                    $('#h_alliance').css('color', '#2b80eb')
+                    break
+
+                case 'press' :
+                    $('#h_press').css('color', '#2b80eb')
+                    break
+            }
+
+        });
+    })();
+</script>

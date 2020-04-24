@@ -2,41 +2,6 @@
                 COMMON
 **************************************/
 
-#container {
-    overflow-x: hidden;
-    min-height: calc(80vh + 4px);
-}
-
-.container {
-    padding: 0 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-
-@media (min-width: 1140px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-.d-flex {
-    display: flex;
-    display: -webkit-flexbox;
-}
-
-.row {
-    display: flex;
-    display: -webkit-flexbox;
-    flex-wrap: wrap;
-}
-
 .common_modal_title {
     position: relative;
     margin: 25px 0;
@@ -48,7 +13,6 @@
         font-size: 20px !important;
     }
 }
-
 
 .common_modal_title > h3 {
     padding-right: 60px;
@@ -234,6 +198,28 @@
     opacity: 0;
 }
 
+.common_tab {
+    text-align: center;
+    height: 70px;
+    border: 1px solid #1c7ef9;
+    background: #e9f2ff;
+    margin-top: 2rem;
+    color: #4c4c4c;
+    font-size: 1.2rem;
+}
+
+.common_tab > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.common_tab > .click {
+    background: #1c7ef9;
+    color: white;
+}
 
 /*************************************
            COMMON ANIMATION
@@ -296,6 +282,7 @@
     right: 0;
     z-index: 10;
     background: white;
+    border-bottom: 1px solid #c3c3c3;
 }
 
 #header > .container {
@@ -315,6 +302,12 @@
     height: inherit;
     display: flex;
     align-items: center;
+    padding-left: 0;
+}
+
+.h_firstSection > a {
+    width: 100%;
+    height: 100%;
 }
 
 .h_secondSection > a {
@@ -331,6 +324,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 0;
 }
 
 .h_whitePaper {
@@ -362,11 +356,8 @@
                SECTION
 **************************************/
 
-.s_container {
-    margin-top: 72px;
-}
 
-.s_container > section {
+#container > section {
     padding: 5rem 1rem;
 }
 
@@ -479,7 +470,7 @@
     font-size: 1.3rem;
 }
 
-.s_second_card > div:last-child {
+.s_second_card > a > div {
     text-align: center;
     font-weight: normal;
     color: white;
@@ -614,6 +605,21 @@
     color: #676767;
     letter-spacing: 0.6px;
     line-height: 1.7;
+}
+
+.s_fourth_more {
+    width: 77px;
+    height: 28px;
+    border-radius: 14px;
+    border: solid 1px #1c7ef9;
+    background-color: #ffffff;
+    line-height: 2;
+    text-align: center;
+    color: #1c7ef9;
+    cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    right: 3rem;
 }
 
 .s_fifth {
@@ -849,6 +855,8 @@
 
 #footer {
     padding: 2rem 0;
+    margin-top: 5rem;
+    border-top: 1px solid #878787;
 }
 
 .f_logo {
@@ -908,6 +916,7 @@
     background-color: white;
     border-color: black;
 }
+
 .btn {
     display: inline-block;
     margin-bottom: 0;
@@ -963,12 +972,13 @@
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
-.dropdown-menu>li>a {
+
+.dropdown-menu > li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -978,6 +988,361 @@
     white-space: nowrap;
 }
 
-.open>.dropdown-menu {
+.open > .dropdown-menu {
     display: block;
+}
+
+
+/*************************************
+               SUMMARY
+**************************************/
+
+.sm_container {
+    padding: 3rem 0;
+}
+
+.sm_imgContainerVision {
+    width: 80%;
+    margin: auto;
+}
+
+.sm_imgContainer > img {
+    width: 100%;
+}
+
+.sm_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.sm_subTitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sm_descContainer {
+    margin-top: 1rem;
+    text-align: center;
+    color: #676767;
+}
+
+.sm_descContainer > div {
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+.sm_descContainer > div:before {
+    content: '\2022';
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+
+/*************************************
+               SERVICE
+**************************************/
+
+.sv_desc {
+    padding-top: 3rem;
+    font-weight: 500;
+}
+
+.sv_contentsBox {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.sv_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sv_contentsDesc {
+    margin-top: 1rem;
+    text-align: center;
+    color: #676767;
+    line-height: 2;
+}
+
+.sv_imgContainer {
+    width: 60%;
+    margin: 3rem auto auto;
+}
+
+.sv_imgContainer > img {
+    width: 100%;
+}
+
+.sv_contentsDescSub {
+    min-height: 300px;
+}
+
+.sv_imgContainerSub > img {
+    margin-top: -60px;
+}
+
+
+/*************************************
+             TECHNOLOGY
+**************************************/
+
+.t_desc {
+    padding-top: 3rem;
+    font-weight: 500;
+}
+
+.t_contentsBox {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.t_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.t_subTitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.t_contentsDesc {
+    margin-top: 1rem;
+    text-align: center;
+    color: #676767;
+    line-height: 2;
+}
+
+.t_contentsDescSub:before {
+    content: '\2022';
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.t_imgContainer {
+    width: 60%;
+    margin: 3rem auto auto;
+}
+
+.t_imgContainer > img {
+    width: 100%;
+}
+
+.t_tabItem {
+    border-right: 1px solid #1d7df9;
+}
+
+
+/*************************************
+             ALLIANCE
+**************************************/
+
+.a_logoImage {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_title {
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+    line-height: 1.14;
+    font-weight: normal;
+    color: black;
+}
+
+.a_desc {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #676767;
+}
+
+.a_descBold {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.a_cardContainer {
+    margin-top: 2.7rem;
+    justify-content: center;
+}
+
+.a_card {
+    width: 270px;
+    min-height: 250px;
+    margin: 1rem;
+}
+
+.a_card > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_card > div:last-child {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #676767;
+    margin-top: 2rem;
+}
+
+.a_linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_link {
+    margin: 2rem auto auto;
+    width: 545px;
+    height: 78px;
+    border-radius: 39px;
+    background-color: #2b80eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.a_card_title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.a_card_desc {
+    font-weight: 400 !important;
+    text-align: center !important;
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+    color: #676767 !important;
+    margin-top: 1rem !important;
+}
+
+.a_firstDesc {
+    color: #676767;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.a_firstDesc > span {
+    font-weight: bold;
+    color: black;
+}
+
+.a_showBtn {
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1rem;
+    padding-top: 17px;
+    cursor: pointer;
+}
+
+
+/*************************************
+                PRESS
+**************************************/
+
+.p_title {
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+    line-height: 1.14;
+    font-weight: normal;
+    color: black;
+}
+
+.p_desc {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #676767;
+}
+
+.p_contentsWrapper {
+    margin-top: 2rem;
+}
+
+.p_itemContainer {
+    margin-top: 3rem;
+}
+
+.p_cardContents {
+    padding: 1.5rem 1rem;
+    margin-top: -5px;
+    background: white;
+    font-family: NotoSansCJKkr, serif;
+}
+
+.p_date {
+    font-size: 0.8rem;
+    color: #888888;
+    font-weight: 300;
+}
+
+.p_category {
+    margin-top: 0.5rem;
+}
+
+.p_category > div {
+    font-size: 1rem;
+    text-align: center;
+    background: black;
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 16px;
+    margin-top: 1rem;
+}
+
+.p_subTitle {
+    margin-top: 1.1rem;
+    font-family: NotoSansCJKkr, serif;
+    line-height: 1.56;
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.p_card {
+    border: 1px solid #878787;
+}
+
+.p_card > a:first-child {
+    width: 100%;
+}
+
+.p_thumbnail {
+    width: 100%;
+    cursor: pointer;
 }

@@ -76,14 +76,14 @@
     font-family: 'NotoSansCJKkr';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/notosanscjkk/NOTOSANSCJKKR-MEDIUM.OTF') format('opentype');
+    src: url('../fonts/notosanscjkk/NOTOSANSCJKKR-REGULAR.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'NotoSansCJKkr';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/notosanscjkk/NOTOSANSCJKKR-REGULAR.OTF') format('opentype');
+    src: url('../fonts/notosanscjkk/NOTOSANSCJKKR-MEDIUM.OTF') format('opentype');
 }
 
 @font-face {
@@ -2772,4 +2772,50 @@ textarea {
     .mx-xl-auto {
         margin-left: auto !important;
     }
+}
+
+#container {
+    margin-top: 72px;
+}
+
+.container {
+    padding: 0 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+@media (min-width: 1140px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.d-flex {
+    display: flex;
+    display: -webkit-flexbox;
+}
+
+.row {
+    display: flex;
+    display: -webkit-flexbox;
+    flex-wrap: wrap;
+}
+
+.text-align-left {
+    text-align: left !important;
+}
+
+.text-align-right {
+    text-align: right !important;
+}
+
+.w-100 {
+    width: 100% !important;
 }
