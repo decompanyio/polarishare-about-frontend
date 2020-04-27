@@ -320,6 +320,10 @@
     color: black;
 }
 
+.h_secondSection > a:hover {
+    color: #1c7ef9;
+}
+
 .h_thirdSection {
     display: flex;
     justify-content: flex-end;
@@ -342,13 +346,17 @@
 }
 
 .h_language {
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.h_language:hover {
+    color: #1c7ef9;
 }
 
 
@@ -855,7 +863,6 @@
 
 #footer {
     padding: 2rem 0;
-    margin-top: 5rem;
     border-top: 1px solid #878787;
 }
 
@@ -871,6 +878,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .f_secondSection > a {
@@ -986,6 +994,10 @@
     line-height: 1.42857143;
     color: #333;
     white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #1c7ef9;
 }
 
 .open > .dropdown-menu {
@@ -1300,6 +1312,7 @@
     margin-top: -5px;
     background: white;
     font-family: NotoSansCJKkr, serif;
+    border-top: 1px solid #e8e8e8;
 }
 
 .p_date {
@@ -1335,7 +1348,7 @@
 }
 
 .p_card {
-    border: 1px solid #878787;
+    border: 1px solid #e8e8e8;
 }
 
 .p_card > a:first-child {

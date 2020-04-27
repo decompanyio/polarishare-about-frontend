@@ -2819,3 +2819,7 @@ textarea {
 .w-100 {
     width: 100% !important;
 }
+
+.f-weight-400 {
+    font-weight: 400;
+}

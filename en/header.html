@@ -1,19 +1,19 @@
 <div class="container row ">
     <div class="h_firstSection col-3">
-        <a href="./index.html" title="Link to Main page">
+        <a href="./index.html">
             <div class="h_logo"></div>
         </a>
     </div>
     <div class="h_secondSection col-6 d-flex">
-        <a href="./summary.html" id="h_summary" title="link to Summary">Summary</a>
-        <a href="./service.html" id="h_service" title="link to Service">Service</a>
-        <a href="./technology.html" id="h_technology" title="link to Technology">Technology</a>
-        <a href="./alliance.html" id="h_alliance" title="link to Alliance">Alliance</a>
-        <a href="./press.html" id="h_press" title="link to Press">Press</a>
+        <a href="./summary.html" id="h_summary">Summary</a>
+        <a href="./service.html" id="h_service">Service</a>
+        <a href="./technology.html" id="h_technology">Technology</a>
+        <a href="./alliance.html" id="h_alliance">Alliance</a>
+        <a href="./press.html" id="h_press">Press</a>
     </div>
     <div class="h_thirdSection col-3 d-flex">
-        <a href="/" class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
-        <a class="h_language" href="./en/index.html" title="Change language">ENGLISH</a>
+        <a href="/" class="h_whitePaper">WHITEPAPER</a>
+        <a class="h_language" href="../index.html">KOREAN</a>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
         "use strict";
 
         $(function () {
-            let page = location.href.split('/')[4].split('.')[0]
+            let page = location.href.split('/')[5].split('.')[0]
 
             switch (page) {
                 case 'summary' :
