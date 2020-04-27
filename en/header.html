@@ -22,7 +22,9 @@
         "use strict";
 
         $(function () {
-            let page = location.href.split('/')[5].split('.')[0]
+
+            let pageName = location.href.split('/')[4]
+            let page = pageName.split('.')[0]
 
             switch (page) {
                 case 'summary' :
