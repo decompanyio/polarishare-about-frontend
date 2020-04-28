@@ -444,7 +444,6 @@
 .s_second_title {
     letter-spacing: 1.32px;
     text-align: center;
-    font-family: "Neo Sans Pro", serif;
     font-size: 2.7rem;
     font-weight: 500;
 }
@@ -495,7 +494,7 @@
     height: 37px;
     border-radius: 18.5px;
     background-color: #1c7ef9;
-    padding-top: 9px;
+    padding-top: 7px;
     cursor: pointer;
     margin: 2rem auto;
 }
@@ -522,7 +521,6 @@
     line-height: 1.14;
     font-weight: normal;
     color: white;
-    font-family: "Neo Sans Pro", serif;
 }
 
 .s_third_desc {
@@ -586,7 +584,6 @@
 .s_fourth_title {
     letter-spacing: 1.32px;
     text-align: center;
-    font-family: "Neo Sans Pro", serif;
     font-size: 2.7rem;
     font-weight: 500;
 }
@@ -637,7 +634,7 @@
     border-radius: 14px;
     border: solid 1px #1c7ef9;
     background-color: #ffffff;
-    line-height: 2.1;
+    line-height: 2;
     text-align: center;
     color: #1c7ef9;
     cursor: pointer;
@@ -661,7 +658,6 @@
     font-size: 2.7rem;
     color: white;
     letter-spacing: 1.32px;
-    font-family: "Neo Sans Pro", serif;
     font-weight: 500;
 }
 
@@ -766,7 +762,7 @@
 .s_seventh_title {
     text-align: center;
     font-size: 2.7rem;
-    font-weight: normal;
+    font-weight: 500;
     color: white;
 }
 
@@ -1255,12 +1251,6 @@
     line-height: 1.8;
     color: #676767;
     margin-top: 2rem;
-}
-
-.a_linkContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .a_link {
