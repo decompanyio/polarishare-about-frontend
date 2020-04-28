@@ -318,6 +318,7 @@
     font-weight: 500;
     font-size: 20px;
     color: black;
+    line-height: 3.8;
 }
 
 .h_secondSection > a:hover {
@@ -345,6 +346,11 @@
     font-weight: 300;
 }
 
+.h_whitePaper:hover {
+    color: #1c7ef9;
+    border-color: #1c7ef9;
+}
+
 .h_language {
     margin: 0 0 0 2rem;
     display: flex;
@@ -353,6 +359,7 @@
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
+    line-height: 5;
 }
 
 .h_language:hover {
@@ -435,10 +442,11 @@
 }
 
 .s_second_title {
+    letter-spacing: 1.32px;
     text-align: center;
     font-family: "Neo Sans Pro", serif;
     font-size: 2.7rem;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .s_second_desc {
@@ -571,10 +579,16 @@
     font-weight: normal;
 }
 
+.s_third_link:hover {
+
+}
+
 .s_fourth_title {
+    letter-spacing: 1.32px;
     text-align: center;
+    font-family: "Neo Sans Pro", serif;
     font-size: 2.7rem;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .s_fourth_contentsWrapper {
@@ -603,8 +617,9 @@
 .s_fourth_item_title {
     font-size: 2.1rem;
     color: black;
-    font-weight: normal;
-    letter-spacing: 1.05px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: NanumBarunGothic, sans-serif;
 }
 
 .s_fourth_item_desc {
@@ -613,6 +628,7 @@
     color: #676767;
     letter-spacing: 0.6px;
     line-height: 1.7;
+    font-family: NanumBarunGothic, sans-serif;
 }
 
 .s_fourth_more {
@@ -621,13 +637,19 @@
     border-radius: 14px;
     border: solid 1px #1c7ef9;
     background-color: #ffffff;
-    line-height: 2;
+    line-height: 2.1;
     text-align: center;
     color: #1c7ef9;
     cursor: pointer;
     position: absolute;
-    top: 1.2rem;
+    top: 1.1rem;
     right: 3rem;
+    font-size: 0.9rem;
+}
+
+.s_fourth_more:hover {
+    color: white;
+    background: #1c7ef9;
 }
 
 .s_fifth {
@@ -637,8 +659,10 @@
 .s_fifth_title {
     text-align: center;
     font-size: 2.7rem;
-    font-weight: normal;
     color: white;
+    letter-spacing: 1.32px;
+    font-family: "Neo Sans Pro", serif;
+    font-weight: 500;
 }
 
 .s_fifth_contentsWrapper {
@@ -647,7 +671,7 @@
 
 .s_fifth_name {
     font-size: 1.7rem;
-    font-weight: bold;
+    font-weight: 500;
     color: white;
     line-height: 1.43;
 }
@@ -662,8 +686,8 @@
 }
 
 .s_fifth_iconWrapper > img {
-    width: 29px;
-    height: 29px;
+    width: 27px;
+    height: 27px;
     position: absolute;
     top: -3px;
     cursor: pointer;
@@ -693,6 +717,7 @@
     font-weight: normal;
     color: white;
     line-height: 2;
+    font-family: NanumBarunGothic, sans-serif;
 }
 
 .s_fifth_career:before {
@@ -704,9 +729,11 @@
 }
 
 .s_sixth_title {
+    letter-spacing: 1.32px;
     text-align: center;
+    font-family: "Neo Sans Pro", serif;
     font-size: 2.7rem;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .s_sixth_contentsWrapper {
@@ -881,6 +908,11 @@
     cursor: pointer;
 }
 
+.f_firstSection > a {
+    width: 100%;
+    height: 100%;
+}
+
 .f_secondSection > a {
     margin: 0 1.2rem;
     display: flex;
@@ -919,6 +951,14 @@
     border: 1px solid black;
 }
 
+.dropdown:hover, .dropup:hover {
+    border: 1px solid #1c7ef9;
+}
+
+.dropdown:hover > button, .dropup:hover > button {
+    color: #1c7ef9;
+}
+
 .btn-primary {
     color: black;
     background-color: white;
@@ -926,6 +966,7 @@
 }
 
 .btn {
+    outline: none;
     display: inline-block;
     margin-bottom: 0;
     font-weight: 500;
