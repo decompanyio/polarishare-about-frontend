@@ -2830,3 +2830,38 @@ textarea {
 .f-weight-400 {
     font-weight: 400;
 }
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+@media (min-width: 576px) {
+    .d-sm-block {
+        display: block !important;
+    }
+    .d-sm-none {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block !important;
+    }
+    .d-md-none {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .d-xl-block {
+        display: block !important;
+    }
+    .d-xl-none {
+        display: none !important;
+    }
+}
