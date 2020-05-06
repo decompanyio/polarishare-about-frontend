@@ -292,6 +292,7 @@
 @media (max-width: 575px) {
     .common_menuBtn > img {
         width: 80%;
+        height: intrinsic;
     }
 }
 
@@ -510,6 +511,7 @@
 .m_closeBtn {
     position: absolute;
     right: 1rem;
+    top: 1rem;
 }
 
 .m_closeBtn > img {
