@@ -1,54 +1,54 @@
 <div class="container d-flex ">
     <div class="h_firstSection col-6 col-xl-3">
-        <a href="./index.html" title="Link to Main page">
-            <img class="h_logo" src="./img/logo/logo_blue.png" alt="polaris share logo"/>
+        <a href="index.html" title="Link to Main page">
+            <img class="h_logo" src="img/logo/logo_blue.png" alt="polaris share logo" />
         </a>
     </div>
     <div class="h_secondSection col-xl-6 d-flex">
-        <a href="./summary.html" id="h_summary" title="link to Summary">Summary</a>
-        <a href="./service.html" id="h_service" title="link to Service">Service</a>
-        <a href="./technology.html" id="h_technology" title="link to Technology">Technology</a>
-        <a href="./alliance.html" id="h_alliance" title="link to Alliance">Alliance</a>
-        <a href="./press.html" id="h_press" title="link to Press">Press</a>
+        <a href="summary.html" id="h_summary" title="link to Summary">Summary</a>
+        <a href="service.html" id="h_service" title="link to Service">Service</a>
+        <a href="technology.html" id="h_technology" title="link to Technology">Technology</a>
+        <a href="alliance.html" id="h_alliance" title="link to Alliance">Alliance</a>
+        <a href="press.html" id="h_press" title="link to Press">Press</a>
     </div>
     <div class="h_thirdSection col-6 col-xl-3 d-flex">
-        <a href="./ps_whitepaper.pdf" class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
-        <a class="h_language" href="./en/index.html" title="Change language">ENGLISH</a>
+        <a href="../ps_whitepaper.pdf" class="h_whitePaper" title="link to White Paper">WHITEPAPER</a>
+        <a class="h_language" href="./kr/index.html" title="Change language">KOREAN</a>
         <div class="common_menuBtn" id="menuBtn">
-            <img src="./img/header/icon_menu.png" alt="menu icon"/>
+            <img src="img/header/icon_menu.png" alt="menu icon"/>
         </div>
     </div>
 
 
     <div id="menu">
-        <div class="m_wrapper"></div>
-        <div class="m_container">
+        <div class="m_wrapper" id="mWrapper"></div>
+        <div class="m_container" id="mContainer">
             <div class="m_title">
                 Category
                 <div class="m_closeBtn" id="menuCloseBtn">
-                    <img src="./img/header/icon_close.png" alt="menu close button"/>
+                    <img src="img/header/icon_close.png" alt="menu close button"/>
                 </div>
             </div>
             <div class="m_list">
                 <div class="m_listItem">
-                    <a href="./summary.html" id="h_summary_sub" title="link to Summary">Summary</a>
+                    <a href="summary.html" id="h_summary_sub" title="link to Summary">Summary</a>
                 </div>
                 <div class="m_listItem">
-                    <a href="./service.html" id="h_service_sub" title="link to Service">Service</a>
+                    <a href="service.html" id="h_service_sub" title="link to Service">Service</a>
                 </div>
                 <div class="m_listItem">
-                    <a href="./technology.html" id="h_technology_sub" title="link to Technology">Technology</a>
+                    <a href="technology.html" id="h_technology_sub" title="link to Technology">Technology</a>
                 </div>
                 <div class="m_listItem">
-                    <a href="./alliance.html" id="h_alliance_sub" title="link to Alliance">Alliance</a>
+                    <a href="alliance.html" id="h_alliance_sub" title="link to Alliance">Alliance</a>
                 </div>
                 <div class="m_listItem">
-                    <a href="./press.html" id="h_press_sub" title="link to Press">Press</a>
+                    <a href="press.html" id="h_press_sub" title="link to Press">Press</a>
                 </div>
             </div>
             <div class="d-flex m_listSub">
-                <a href="./ps_whitepaper.pdf" class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
-                <a class="h_language" href="./en/index.html" title="Change language">ENGLISH</a>
+                <a href="../ps_whitepaper.pdf" class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
+                <a class="h_language" href="../index.html" title="Change language">KOREAN</a>
             </div>
         </div>
     </div>
@@ -59,7 +59,8 @@
         "use strict";
 
         $(function () {
-            let pageName = location.href.split('/')[3]
+
+            let pageName = location.href.split('/')[4]
             let page = pageName.split('.')[0]
 
             switch (page) {
@@ -89,14 +90,26 @@
                     break
             }
 
+            // menu slide
+
             $("#menuBtn").click(function () {
                 $('#menu').css('display', 'block')
                 $('body').css('overflow', 'hidden')
+
+                setTimeout(function () {
+                    $('#mContainer').addClass('m_showContainer')
+                    $('#mWrapper').addClass('m_showWrapper')
+                },100)
             })
 
             $("#menuCloseBtn").click(function () {
-                $('#menu').css('display', 'none')
-                $('body').css('overflow', 'auto')
+                $('#mContainer').removeClass('m_showContainer')
+                $('#mWrapper').removeClass('m_showWrapper')
+
+                setTimeout(function () {
+                    $('#menu').css('display', 'none')
+                    $('body').css('overflow', 'auto')
+                },500)
             })
 
         });

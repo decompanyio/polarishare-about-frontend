@@ -1,90 +1,102 @@
 <div class="t_contentsBox">
-    <div class="t_title">POLARIS SHARE 및 블록체인</div>
+    <div class="t_title">POLARIS SHARE and Blockchain</div>
     <div class="t_contentsDesc">
-        POLARIS SHARE 프로젝트는 블록체인 플랫폼에 DApp으로서 구축되며, DApp는 그 경제를 형성하는 토큰을 생성할 수 있다.
+        The POLARIS SHARE project is established as the DApp on the blockchain platform, which can generate tokens that
+        form its economy.
         <br>
-        중요한 데이터와 트랜잭션 기록은 블록체인에 저장되기 때문에, 쉽게 조작할 수 없고 신뢰성 있는 분산형 거래 방식으로 구현된다.
+        Because important data and transaction records are stored in blockchain, it is implemented with the reliable
+        distributed transaction method that it is not easy to manipulate.
         <br>
-        하지만, 블록체인 플랫폼의 성능과 비용 문제 때문에, 초기 단계에는 블록체인과 현재의 클라우드 기술이 혼합된 하이브리드 방식으로 서비스를 제공할 예정이다.
+        However, the service will be provided as the hybrid way at the initial stage, the way which is mixed of
+        blockchain and current cloud technologies due to the performance and cost problems of the blockchain platform.
     </div>
     <div class="t_contentsDesc">
-        비록 프로젝트는 하이브리드 유형으로 제공되지만, 탈중앙화, 독립성, 신뢰성이 보장되는 방식으로 설계될 것이다.
+        Although the project is provided as a hybrid type, it will be designed in the ways that decentralization,
+        independence and reliability  are guaranteed,
         <br>
-        그리고 블록체인 기술은 앞으로 점점 개선될 것이므로 프로젝트의 많은 부분이 블록체인 위에 구현될 것이다.
+        and the most parts of the project will be implemented on the blockchain as the blockchain technology will
+        gradually improve more and more in the future.
         <br>
-        블록체인에 저장될 아이템의 선택은 데이터 볼륨, 필수 처리 속도, 신뢰성 요구 수준에 따라 결정될 것이다.
+        The choice of items to be stored in the blockchain will be determined by the data volume, the required
+        processing speed and the requested level of reliability.
     </div>
     <div class="t_contentsDesc">
-        예를 들어, 문서 관련 데이터는 문서 자체, 문서의 메타 데이터, 코멘트와 조회수 같은 문서 활동 데이터로 나뉠 수 있다.
+        For example, the data related to documents can be divided into the document itself, the meta-data of documents,
+        and the activity data of documents such as the numbers of comments and views.
         <br>
-        문서 자체는 큰 사이즈로 인해 현재의 블록체인에 기록하기 어렵지만, 문서의 원본 여부에 대한 검증은 문서 저작권 문제를
+        The document itself is difficult to record on the current blockchain due to its large size,
         <br>
-        고려하면 나중에 중요한 문제가 된다. 따라서, 데이터 자체는 오프-체인에 저장하는 반면, 해시값은 온-체인에 저장함으로써
+        but verification of
+        whether the document is original becomes an important issue later, considering document copyright issues.
         <br>
-        문서의 생성 시간과 원본 식별을 신뢰할 수 있는 방식으로 시스템을 구축한다.
+        Thus, the system is constructed in reliable ways that allows the creation time and identification of the
+        originals by that data itself is stored in off-chains and hash values are stored in on-chains.
     </div>
     <div class="t_contentsDesc">
-        또한, 비록 클라우드를 통해 구축되지만, Polaris Office뿐 아니라 다양한 Office 소프트웨어를 비롯한 협동 툴을 오픈 API를 통해 연결하여 사용하게 될 것이다.
+        Also, although built through the cloud, collaborative tools, including Polaris Office as well as various Office software, will be connected and used through open APIs.
         <br>
-        이를 통해 프런트엔드를 구현하며 POLARIS SHARE팀은 동일한 수준에서 데이터를 열람할 수 있다.
+        The frontend is implemented through this and POLARIS SHARE team can look over data at the same level.
+    </div>
+    <div class="t_imgContainer">
+        <img src="img/section/4/architecture_extension.png" alt="system architecture image"/>
     </div>
 </div>
 
 
 <div class="t_contentsBox">
-    <div class="t_title">시스템 아키텍처</div>
+    <div class="t_title">System Architecture</div>
     <div class="t_imgContainer">
-        <img src="./img/section/4/system_architecture.png" alt="system architecture image" />
+        <img src="img/section/4/system_architecture.png" alt="system architecture image" />
     </div>
     <div class="t_subTitle">
-        POLARIS SHARE 의 구성 요소는 다음과 같다.
+        The component factors of POLARIS SHARE are as follows.
     </div>
     <div class="t_contentsDesc">
-        POLARIS SHARE 프론트엔드 - 지식 거래 서비스를 이용하기 위한 사용자 애플리케이션
+        POLARIS SHARE Frontend: User applications for using knowledge transaction service
     </div>
     <div class="t_contentsDesc">
-        POLARIS SHARE 하이브리드 앱 - 블록체인과 클라우드에 기반한 지식 거래 서비스 비즈니스 로직
+        POLARIS SHARE Hybrid App: The business logic for the Knowledge transaction services based on Blockchain and Cloud
     </div>
     <div class="t_contentsDesc">
-        POLARIS SHARE 오픈 AP - 비즈니스 로직을 기초로 공통 기능 제공
+        POLARIS SHARE Open API: Providing common functions based on the business logic
     </div>
     <div class="t_contentsDesc">
-        바탕이 되는 블록체인 플랫폼 - 바탕이 되는 블록체인 플랫폼으로 이더리움이 사용될 예정이다.
+        The underlying blockchain platform: the Ethereum will be used as the underlying blockchain platform
     </div>
     <div class="t_contentsDesc">
-        전통적인 웹 및 클라우드 서비스 - Amazon Web Service 및 민간 호스팅 서버가 사용될 예정이다.
+        Traditional Web and Cloud Services: Amazon Web Service and Private Hosting Server will be used
     </div>
 </div>
 
 
 <div class="t_contentsBox">
-    <div class="t_title">아키텍처 확장</div>
+    <div class="t_title">Architecture Extension</div>
+    <div class="t_contentsDesc">
+        Although the POLARIS SHARE project currently provides only knowledge transaction services as proposed services,
+        <br>
+        it aims to become the platform that provides expert network oriented and distributed work environments beyond the knowledge transaction
+    </div>
+    <div class="t_contentsDesc">
+        Initially, we have a plan to expand to collaborative services such as profile, human network services, project management services,
+        <br>
+        business messengers and video chat, starting from knowledge exchanges and a partner App, Office software.
+    </div>
+    <div class="t_contentsDesc">
+        The Open API of The POLARIS SHARE will enable projects to expand service platforms by providing API,
+        <br>
+        thereby these services can be executed on the common basis which is stored in blockchain.
+    </div>
     <div class="t_imgContainer">
-        <img src="./img/section/4/architecture_extension.png" alt="architecture extension image" />
-    </div>
-    <div class="t_contentsDesc">
-        POLARIS SHARE 프로젝트는 현재는 지식 거래 서비스만을 제안된 서비스로 제시하고 있지만,
-        <br>
-        향후 지식 거래를 넘어 전문가 네트워크 지향 분산형 작업 환경을 제공하는 플랫폼이 되는 것을 목표로 하고 있다.
-    </div>
-    <div class="t_contentsDesc">
-        처음에는 지식 교환과 파트너 앱인 오피스 소프트웨어부터 시작하여 프로필, 인적 네트워크 서비스, 프로젝트 관리 서비스,
-        <br>
-        비즈니스 메신저, 동영상 채팅 같은 협동 서비스로 확장해 나갈 계획이다.
-    </div>
-    <div class="t_contentsDesc">
-        POLARIS SHARE 오픈 API는 API를 제공함으로써 프로젝트를 서비스 플랫폼으로 확장할 수 있게 할 것이며,
-        <br>
-        그리하여 이러한 서비스가 블록체인에 저장된 공동 기반 위에서 실행될 수 있을 것이다.
+        <img src="img/section/4/architecture_extension.png" alt="architecture extension image"/>
     </div>
 </div>
 
 
 <div class="t_contentsBox">
-    <div class="t_title">POLARIS SHARE에서의 POLS</div>
+    <div class="t_title">POLS in the POLARIS SHARE</div>
     <div class="t_contentsDesc">
-        POLS는 다양한 지식 거래 서비스를 이용하기 위한 상품(commodity)이다. ERC20 사양의 표준 토큰은 특정한 기능을 추가하여 암호화폐 거래소에서 거래할 수 있다.
+        POLS is a commodity for using various knowledge transaction services. The standard tokens of ERC20 specification can be traded on cryptocurrency exchanges by adding specific functions,
         <br>
-        그리고 POLARIS SHARE 플랫폼에서는 사용자 및 문서 콘텐츠의 수집, 보상, 교환 또는 다른 목적을 위해 사용 가능하다.
+        and on the POLARIS SHARE platform, it can be used for the collections, the rewards, the exchanges, or the other purposes of user and document contents.
     </div>
 </div>
