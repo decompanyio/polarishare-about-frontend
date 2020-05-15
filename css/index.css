@@ -264,7 +264,6 @@
     color: white;
 }
 
-
 /*************************************
            COMMON ANIMATION
 **************************************/
@@ -850,6 +849,10 @@
     bottom: 1.4rem;
 }
 
+.s_second_card > a:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 991px) {
     .s_second_card > a {
         width: calc(100% - 2.2rem);
@@ -886,6 +889,11 @@
     background: #1d7ff9;
     color: #fff;
     font-weight: 500;
+    transition: all ease .3s;
+}
+
+.s_second_card > a > div:hover {
+    background: #006fff;
 }
 
 @media (max-width: 767px) {
@@ -997,6 +1005,10 @@
     font-weight: normal;
 }
 
+.s_third_link:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 767px) {
     .s_third_link {
         font-size: 1.6rem;
@@ -1047,6 +1059,7 @@
 }
 
 .s_fourth_item_title {
+    word-break: break-all;
     font-size: 2.1rem;
     color: #333;
     font-weight: 500;
@@ -1192,7 +1205,7 @@
         margin-right: 0.8rem;
         height: 28px;
         width: 50px;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -1201,7 +1214,6 @@
 }
 
 .s_fifth_career {
-    max-width: 400px;
     padding-left: 1rem;
     position: relative;
     font-weight: normal;
@@ -1357,6 +1369,10 @@
     font-size: 1rem;
 }
 
+.s_seventh_subTitle:hover {
+    color: #1c7ef9;
+}
+
 @media (max-width: 767px) {
     .s_seventh_subTitle {
         font-size: 0.8rem;
@@ -1366,6 +1382,7 @@
 .s_seventh_thumbnail {
     width: 100%;
     cursor: pointer;
+    height: 215px;
 }
 
 .s_eighth {
@@ -2003,6 +2020,10 @@
     font-weight: normal;
 }
 
+.a_link:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 575px) {
     .a_link {
         font-size: 1.3rem;
@@ -2073,6 +2094,10 @@
     margin-top: 1rem;
     padding-top: 17px;
     cursor: pointer;
+}
+
+.a_showBtn:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 575px) {
@@ -2183,6 +2208,7 @@
 .p_thumbnail {
     width: 100%;
     cursor: pointer;
+    height: 215px;
 }
 
 
