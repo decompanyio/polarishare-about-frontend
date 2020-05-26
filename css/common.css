@@ -2717,6 +2717,10 @@ textarea {
     text-align: left !important;
 }
 
+.text-align-center {
+    text-align: center !important;
+}
+
 .text-align-right {
     text-align: right !important;
 }
@@ -2729,6 +2733,14 @@ textarea {
     font-weight: 400;
 }
 
+.f-color-white {
+    color: white !important;
+}
+
+.f-color-main {
+    color: #3b3b3b;
+}
+
 .d-none {
     display: none !important;
 }
@@ -2737,9 +2749,25 @@ textarea {
     display: block !important;
 }
 
+.bg_white {
+    background: white !important;
+}
+
+.bg_blackOpt {
+    background: black !important;
+    opacity: 0.7;
+}
+
+.tt_uppercase {
+    text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
     .d-sm-block {
         display: block !important;
+    }
+    .d-sm-inline-block {
+        display: inline-block !important;
     }
     .d-sm-none {
         display: none !important;
