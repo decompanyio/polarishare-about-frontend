@@ -1142,6 +1142,10 @@
     line-height: 1.7;
 }
 
+.s_fourth_item_desc > div {
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 767px) {
     .s_fourth_item_desc {
         font-size: 0.9rem;
@@ -1288,6 +1292,7 @@
     font-weight: normal;
     color: white;
     line-height: 1.7;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -1575,7 +1580,7 @@
 
 .s_title {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -2298,7 +2303,7 @@
 
 .a_iframeWrapper {
     max-width: 560px;
-    max-height: 280px;
+    max-height: 315px;
     width: 100%;
     height: 100%;
 }
