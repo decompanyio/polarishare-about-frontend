@@ -1566,12 +1566,12 @@
 }
 
 @media (max-width: 575px) {
-    .s_contentsBox > div{
+    .s_contentsBox > div {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
 
-    .s_contentsBox > div > a{
+    .s_contentsBox > div > a {
         display: flex;
         justify-content: center;
         margin-top: 2rem;
@@ -1603,7 +1603,7 @@
 }
 
 .s_contentsDescOpt {
-    background: #00000061;
+    background: rgba(0, 0, 0, 0.38);
     color: white;
 }
 
@@ -2044,7 +2044,7 @@
     font-weight: 400;
 }
 
-.sv_list >img {
+.sv_list > img {
     margin-right: 1rem;
 }
 
@@ -2053,7 +2053,7 @@
         font-size: 1.2rem;
     }
 
-    .sv_list >img {
+    .sv_list > img {
         margin-right: 0.5rem;
     }
 }
@@ -2157,8 +2157,8 @@
 
 .t_roadMapQuarterImgWrapper {
     position: absolute;
-    background: rgb(31,167,237);
-    background: linear-gradient(52deg, rgba(31,167,237,1) 39%, rgba(14,121,255,1) 81%);
+    background: rgb(31, 167, 237);
+    background: linear-gradient(52deg, rgba(31, 167, 237, 1) 39%, rgba(14, 121, 255, 1) 81%);
     color: white;
     left: 0;
     top: 0;
@@ -2269,6 +2269,7 @@
     color: white;
     font-size: 1.8rem;
     font-weight: normal;
+    line-height: 2.6;
 }
 
 .a_link:hover {
