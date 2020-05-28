@@ -1119,7 +1119,7 @@
 
 .s_fourth_item_title {
     word-break: break-all;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     color: #333;
     font-weight: 400;
     position: relative;
@@ -1154,14 +1154,14 @@
 }
 
 .s_fourth_more {
-    width: 77px;
-    height: 28px;
+    width: 71px;
+    height: 23px;
     border-radius: 14px;
     border: solid 1px #1c7ef9;
     background-color: #ffffff;
     color: #1c7ef9;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1580,8 +1580,9 @@
 
 .s_title {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
+    margin: 2rem 0;
 }
 
 @media (max-width: 575px) {
