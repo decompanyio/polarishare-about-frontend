@@ -1,31 +1,21 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <title>Polaris Share</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/common.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
     <link
             rel="stylesheet"
             type="text/css"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
     />
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
     <meta name="theme-color" content="#ffffff">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -72,18 +62,43 @@
 
 
 <div id="container">
-    <div class="container pt-4 mb-5 pb-5">
+    <section class="s_firstSection">
+        <div class="common_bgWrapper">
+            <img src="assets/img/figure/f_left_1.png" alt="bg"/>
+            <img src="assets/img/figure/f_left_2.png" alt="bg"/>
+            <img src="assets/img/figure/f_right_1.png" alt="bg"/>
+            <img src="assets/img/figure/f_right_2.png" alt="bg"/>
+        </div>
+        <div class="container">
+            <img src="assets/img/technology/t_title.png" alt="Technology"/>
+            <div class="common_banner_desc">
+                The POLARIS SHARE project is established as the DApp on the blockchain platform, which can generate
+                tokens that
+                form its economy.
+                <br>
+                Because important data and transaction records are stored in blockchain, it is implemented with the
+                reliable
+                distributed transaction method that it is not easy to manipulate.
+                <br>
+                However, the service will be provided as the hybrid way at the initial stage, the way which is mixed of
+                blockchain and current cloud technologies due to the performance and cost problems of the blockchain
+                platform.
+            </div>
+        </div>
+    </section>
 
-        <div class="common_tab row">
-            <div class="col-12 col-sm-4 click t_tabItem" id="tabTechnology_1">POLARIS SHARE의 테크놀러지</div>
-            <div class="col-12 col-sm-4 t_tabItem" id="tabTechnology_2">로드맵</div>
-            <div class="col-12 col-sm-4" id="tabTechnology_3">토큰</div>
+
+    <div class="container mt-5 pt-1">
+        <div class="common_tab row f-weight-400">
+            <div class="col-12 col-sm-4 click t_tabItem" id="tabTechnology_1">Technology</div>
+            <div class="col-12 col-sm-4 t_tabItem" id="tabTechnology_2">Roadmap</div>
+            <div class="col-12 col-sm-4 t_tabItem" id="tabTechnology_3">Token</div>
             <span class="common_tabCaret d-block d-sm-none"></span>
         </div>
-
-        <div id="technologyContentsBox"></div>
-
     </div>
+
+    <div id="technologyContentsBox"></div>
+
 </div>
 
 

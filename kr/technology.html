@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>Polaris Share</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/common.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512x512.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+
+            $(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+
+                $('#technologyContentsBox').load('components/technology_1.html')
+
+                $('#tabTechnology_1').click(function () {
+                    $('#tabTechnology_1').addClass('click')
+                    $('#tabTechnology_2').removeClass('click')
+                    $('#tabTechnology_3').removeClass('click')
+                    $('#technologyContentsBox').load('components/technology_1.html')
+                })
+
+                $('#tabTechnology_2').click(function () {
+                    $('#tabTechnology_2').addClass('click')
+                    $('#tabTechnology_1').removeClass('click')
+                    $('#tabTechnology_3').removeClass('click')
+                    $('#technologyContentsBox').load('components/technology_2.html')
+                })
+
+                $('#tabTechnology_3').click(function () {
+                    $('#tabTechnology_2').removeClass('click')
+                    $('#tabTechnology_1').removeClass('click')
+                    $('#tabTechnology_3').addClass('click')
+                    $('#technologyContentsBox').load('components/technology_3.html')
+                })
+            });
+        })();
+    </script>
+</head>
+
+
+<body>
+
+
+<header id="header"></header>
+
+
+<div id="container">
+    <section class="s_firstSection">
+        <div class="common_bgWrapper">
+            <img src="../assets/img/figure/f_left_1.png" alt="bg"/>
+            <img src="../assets/img/figure/f_left_2.png" alt="bg"/>
+            <img src="../assets/img/figure/f_right_1.png" alt="bg"/>
+            <img src="../assets/img/figure/f_right_2.png" alt="bg"/>
+        </div>
+        <div class="container">
+            <img src="../assets/img/technology/t_title.png" alt="Technology"/>
+            <div class="common_banner_desc">
+                POLARIS SHARE 프로젝트는 블록체인 플랫폼에 DApp으로서 구축되며, DApp는 그 경제를 형성하는 토큰을 생성할 수 있습니다.
+                <br>
+                중요한 데이터와 트랜잭션 기록은 블록체인에 저장되기 때문에, 쉽게 조작할 수 없고 신뢰성 있는 분산형 거래 방식으로 구현됩니다.
+                <br>
+                하지만, 블록체인 플랫폼의 성능과 비용 문제 때문에, 초기 단계에는 블록체인과 현재의 클라우드 기술이 혼합된 하이브리드 방식으로 서비스를 제공할 예정입니다.
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-5 pt-1">
+        <div class="common_tab row f-weight-400">
+            <div class="col-12 col-sm-4 click t_tabItem" id="tabTechnology_1">테크놀로지</div>
+            <div class="col-12 col-sm-4 t_tabItem" id="tabTechnology_2">로드맵</div>
+            <div class="col-12 col-sm-4 t_tabItem" id="tabTechnology_3">토큰</div>
+            <span class="common_tabCaret d-block d-sm-none"></span>
+        </div>
+    </div>
+
+    <div id="technologyContentsBox"></div>
+
+</div>
+
+
+<footer id="footer"></footer>
+
+
+</body>
+
+
+</html>
