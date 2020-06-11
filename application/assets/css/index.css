@@ -1783,7 +1783,7 @@
 
 .dropdown, .dropup {
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #a7a7a7;
     transition: all ease .4s;
 }
 
@@ -2159,6 +2159,12 @@
     font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 3rem;
+    align-items: center;
+}
+
+.t_roadMapListItem > span {
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
 .t_roadMapQuarterImgWrapper {
@@ -2199,6 +2205,14 @@
 
 .t_roadMap_content {
     color: #4c4c4c;
+    padding-right: 3rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .t_roadMap_content {
+        padding-right: 0;
+    }
 }
 
 .t_roadMap_content > div {
@@ -2206,6 +2220,8 @@
     font-size: 0.8rem;
     position: relative;
     padding-left: 0.6rem;
+    line-height: 1.6;
+    color: #585858;
 }
 
 .t_roadMap_content > div:before {
