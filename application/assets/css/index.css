@@ -2148,8 +2148,12 @@
     border-right: 1px solid #004daf !important;
 }
 
- .t_roadMap_container{
+.t_roadMap_container {
     margin: 2.2rem 0 3rem 0;
+}
+
+.t_roadMapWrapper > img {
+    width: 100%;
 }
 
 .t_roadMapListItem {
