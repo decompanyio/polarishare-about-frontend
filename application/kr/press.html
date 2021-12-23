@@ -61,7 +61,7 @@
 				"use strict";
 
 				$(function () {
-					$("#header").load("header.html");
+					//$("#header").load("header.html");
 					$("#footer").load("footer.html");
 				});
 			})();
@@ -69,7 +69,128 @@
 	</head>
 
 	<body>
-		<header id="header"></header>
+		<header id="header">
+			<div class="container d-flex ">
+				<div class="h_firstSection col-6 col-xl-3">
+					<a href="index.html" title="Link to Main page">
+						<img class="h_logo" src="../assets/img/logo/logo_blue.png" alt="polaris share logo"/>
+					</a>
+				</div>
+				<div class="h_secondSection col-xl-6 d-flex">
+					<a href="summary.html" id="h_summary" title="link to Summary" lang="en">Summary</a>
+					<a href="service.html" id="h_service" title="link to Service" lang="en">Service</a>
+					<a href="technology.html" id="h_technology" title="link to Technology" lang="en">Technology</a>
+					<a href="alliance.html" id="h_alliance" title="link to Alliance" lang="en">Alliance</a>
+					<a href="press.html" id="h_press" title="link to Press" lang="en">Press</a>
+				</div>
+				<div class="h_thirdSection col-6 col-xl-3 d-flex">
+					<a href="https://static-res.polarishare.com/www/ko/POLARIS_SHARE_1.1_whitepaper_KOR.pdf" target="_blank" class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
+					<a class="h_language" href="../index.html" title="Change language" lang="en">ENGLISH</a>
+					<div class="m_bugger" id="menuBtn"><span></span></div>
+				</div>
+			
+			
+				<div id="menu">
+					<div class="m_wrapper" id="mWrapper"></div>
+					<div class="m_container" id="mContainer">
+						<div class="m_title" lang="en">
+							Category
+							<div class="m_close" id="menuCloseBtn"><span></span></div>
+						</div>
+						<div class="m_list">
+							<div class="m_listItem">
+								<a href="summary.html" id="h_summary_sub" title="link to Summary" lang="en">Summary</a>
+							</div>
+							<div class="m_listItem">
+								<a href="service.html" id="h_service_sub" title="link to Service" lang="en">Service</a>
+							</div>
+							<div class="m_listItem">
+								<a href="technology.html" id="h_technology_sub" title="link to Technology" lang="en">Technology</a>
+							</div>
+							<div class="m_listItem">
+								<a href="alliance.html" id="h_alliance_sub" title="link to Alliance" lang="en">Alliance</a>
+							</div>
+							<div class="m_listItem">
+								<a href="press.html" id="h_press_sub" title="link to Press" lang="en">Press</a>
+							</div>
+						</div>
+						<div class="d-flex m_listSub">
+							<a href="https://static-res.polarishare.com/www/ko/POLARIS_SHARE_1.1_whitepaper_KOR.pdf" target="_blank"  class="h_whitePaper" title="link to White paper">WHITEPAPER</a>
+							<a class="h_language" href="../press.html" title="Change language">ENGLISH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z1B94H5EF"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			
+			  gtag('config', 'G-4Z1B94H5EF');
+			</script>
+			
+			<script type="text/javascript">
+				(function () {
+					"use strict";
+			
+					$(function () {
+						let pageName = location.href.split('/')[4]
+						let page = pageName.split('.')[0]
+			
+						switch (page) {
+							case 'summary' :
+								$('#h_summary').css('color', '#2b80eb')
+								$('#h_summary_sub').css('color', '#2b80eb')
+								break
+			
+							case 'service' :
+								$('#h_service').css('color', '#2b80eb')
+								$('#h_service_sub').css('color', '#2b80eb')
+								break
+			
+							case 'technology' :
+								$('#h_technology').css('color', '#2b80eb')
+								$('#h_technology_sub').css('color', '#2b80eb')
+								break
+			
+							case 'alliance' :
+								$('#h_alliance').css('color', '#2b80eb')
+								$('#h_alliance_sub').css('color', '#2b80eb')
+								break
+			
+							case 'press' :
+								$('#h_press').css('color', '#2b80eb')
+								$('#h_press_sub').css('color', '#2b80eb')
+								break
+						}
+			
+						$("#menuBtn").click(function () {
+							$('#menu').css('display', 'block')
+							$('body').css('overflow', 'hidden')
+			
+							setTimeout(function () {
+								$('#mContainer').addClass('m_showContainer')
+								$('#mWrapper').addClass('m_showWrapper')
+							},100)
+						})
+			
+						$("#menuCloseBtn").click(function () {
+							$('#mContainer').removeClass('m_showContainer')
+							$('#mWrapper').removeClass('m_showWrapper')
+			
+							setTimeout(function () {
+								$('#menu').css('display', 'none')
+								$('body').css('overflow', 'auto')
+							},500)
+						})
+			
+					});
+				})();
+			</script>
+		</header>
 
 		<div id="container">
 			<section class="s_firstSection press">
@@ -88,7 +209,7 @@
 						<div class="p_itemContainer row">
 							<div class="p_card">
 								<a href="https://news.mt.co.kr/mtview.php?no=2021111116205272074" target="_blank" rel="noopener noreferrer">
-									<img class="p_thumbnail" src="assets/img/press/news211102.jpg" alt="Tachyon Demo Day Presentation thumbnail">
+									<img class="p_thumbnail" src="../assets/img/press/news211102.jpg" alt="Tachyon Demo Day Presentation thumbnail">
 									<div class="p_cardContents">
 										<div class="p_subTitle">
 											폴라리스오피스 "가상화폐 폴라, 빗썸 유의종목 해제"
@@ -108,7 +229,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/news211102.jpg"
+										src="../assets/img/press/news211102.jpg"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -130,7 +251,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/news211014.jpg"
+										src="../assets/img/press/news211014.jpg"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -152,7 +273,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/news_14.png"
+										src="../assets/img/press/news_14.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -175,7 +296,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/news_13.png"
+										src="../assets/img/press/news_13.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -198,7 +319,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_7.png"
+										src="../assets/img/press/press_7.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -221,7 +342,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_6.jpg"
+										src="../assets/img/press/press_6.jpg"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -244,7 +365,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_5.png"
+										src="../assets/img/press/press_5.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -267,7 +388,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_3.png"
+										src="../assets/img/press/press_3.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -290,7 +411,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_4.png"
+										src="../assets/img/press/press_4.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -312,7 +433,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_2.png"
+										src="../assets/img/press/press_2.png"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -334,7 +455,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/section/7/press_1.jpg"
+										src="../assets/img/section/7/press_1.jpg"
 										alt="Tachyon Demo Day Presentation thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -356,7 +477,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/section/7/press_2.jpg"
+										src="../assets/img/section/7/press_2.jpg"
 										alt="Tachyon Demo Day Interview thumbnail"
 									/>
 									<div class="p_cardContents">
@@ -378,7 +499,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/section/7/press_3.jpg"
+										src="../assets/img/section/7/press_3.jpg"
 										alt="Polaris Office: 5 Best Office Apps for iPhone and
                                     iPad
                                 "
@@ -402,7 +523,7 @@
 								>
 									<img
 										class="p_thumbnail"
-										src="assets/img/press/press_1.png"
+										src="../assets/img/press/press_1.png"
 										alt="SKicking Off ConsenSys’ Tachyon Accelerator Program"
 									/>
 									<div class="p_cardContents">
