@@ -197,6 +197,72 @@
 			</section>
 		</div>
 
+		<script type="text/javascript">
+			var slideIndex = 1;
+			var intervalId;
+
+			function plusDivs(n) {
+				showDivs((slideIndex += n));
+			}
+
+			function goToDiv(n) {
+				window.clearInterval(intervalId);
+				showDivs((slideIndex = n));
+				intervalId = window.setInterval(autoSlide, 7000);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("slide");
+				//get the list of dots
+				var y = document.getElementById("slider-dots").children;
+				if (n > x.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = x.length;
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].classList.remove("active");
+					//remove .active from all dots
+					y[i].classList.remove("active");
+				}
+				x[slideIndex - 1].classList.add("active");
+				//add .active to the selected dot
+				y[slideIndex - 1].classList.add("active");
+			}
+
+			function generateDots() {
+				var i;
+				var x = document.getElementsByClassName("slide");
+				for (i = 0; i < x.length; i++) {
+					var dotNumber = i + 1;
+					var dot = document.createElement("span");
+					dot.innerHTML =
+						'<div class="js-dot" onclick="goToDiv(' +
+						dotNumber +
+						')">' +
+						"</div>";
+					document.getElementById("slider-dots").appendChild(dot);
+				}
+			}
+			generateDots();
+			//placed AFTER generateDots()
+			showDivs(slideIndex);
+
+			function autoSlide() {
+				var newSlideIndex;
+				if (slideIndex === 2) {
+					newSlideIndex = 0;
+				} else {
+					newSlideIndex = slideIndex + 1;
+				}
+				goToDiv(newSlideIndex);
+			}
+
+			intervalId = window.setInterval(autoSlide, 7000);
+		</script>
+
 		<footer id="footer"></footer>
 	</body>
 </html>
