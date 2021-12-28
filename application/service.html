@@ -78,6 +78,14 @@
 						$("#serviceContentsBox").load("components/service_2.html");
 					});
 				});
+				
+				window.onload = function () {
+					var idx = location.search.split('?')[1];
+					if (idx != undefined) {
+						window.location.href = "./service.html" + "?" + idx + "#" + idx;
+					}
+				}
+
 			})();
 		</script>
 	</head>
