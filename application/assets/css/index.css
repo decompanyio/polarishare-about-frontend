@@ -504,6 +504,26 @@
 	border-color: #1c7ef9;
 }
 
+.h_lightPaper {
+	font-size: 0.7rem;
+	border: 1px solid #7c7c7c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 23px;
+	border-radius: 10px;
+	padding: 0 10px;
+	color: #7c7c7c;
+	font-weight: 300;
+	background: white;
+	margin-right: 10px;
+}
+
+.h_lightPaper:hover {
+	color: #1c7ef9;
+	border-color: #1c7ef9;
+}
+
 .h_language {
 	margin: 0 0 0 2rem;
 	display: flex;
