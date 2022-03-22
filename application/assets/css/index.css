@@ -497,6 +497,7 @@
 	color: #7c7c7c;
 	font-weight: 300;
 	background: white;
+	white-space: nowrap;
 }
 
 .h_whitePaper:hover {
@@ -517,6 +518,7 @@
 	font-weight: 300;
 	background: white;
 	margin-right: 10px;
+	white-space: nowrap;
 }
 
 .h_lightPaper:hover {
