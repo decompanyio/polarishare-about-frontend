@@ -1,21 +1,28 @@
 name: Polarishare io production  deployment
-on: 
+
+on:
   push:
     branches:
       - master
+
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code.
-        uses: actions/checkout@master
+      - uses: actions/checkout@v3
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
+
       - name: Push Contents to S3
         run: aws s3 sync ./application s3://${{ secrets.AWS_S3_BUCKET }} --delete
+
+      - name: Set metadata for API files
+        run: aws s3 cp ./application/api s3://${{ secrets.AWS_S3_BUCKET }}/api --content-type application/json --metadata-directive REPLACE
+
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{secrets.AWS_DISTRIBUTION_ID}} --paths "/*"
