@@ -14,15 +14,15 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_PROD }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Push Contents to S3
         run: aws s3 sync ./application s3://${{ secrets.AWS_S3_BUCKET }} --delete
 
       - name: Set metadata for API files
-        run: aws s3 cp ./application/api s3://${{ secrets.AWS_S3_BUCKET }}/api --content-type application/json --metadata-directive REPLACE
+        run: aws s3 cp ./application/api s3://${{ secrets.AWS_S3_BUCKET }}/api --recursive --content-type application/json --metadata-directive REPLACE
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{secrets.AWS_DISTRIBUTION_ID}} --paths "/*"
