@@ -219,7 +219,8 @@
 	position: relative;
 }
 
-@media (max-width: 575px) {
+/* PC/모바일 환경 분기 */
+@media (max-width: 575px) and (hover: hover) and (pointer: fine) {
 	.common_tab {
 		height: 50px;
 	}
@@ -228,6 +229,22 @@
 		display: flex;
 	}
 }
+
+@media (max-width: 575px) and (hover: none) and (pointer: coarse) {
+  .common_tab {
+		height: 50px;
+	}
+
+  .common_tab > .active {
+    position: relative;
+    display: flex;
+  }
+  
+  .common_tab > div:not(.click):not(.active) {
+		display: none;
+	}
+}
+
 
 .common_tab > div {
 	height: 100%;
@@ -480,9 +497,10 @@
 }
 
 @media (max-width: 767px) {
-	.h_thirdSection > a {
-		display: none;
-	}
+	.h_thirdSection > a,
+  .h_thirdSection > .dropdown {
+    display: none;
+  }
 }
 
 .h_whitePaper {
@@ -527,7 +545,7 @@
 }
 
 .h_language {
-	margin: 0 0 0 2rem;
+	margin: 0 0 0 12px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2188,6 +2206,10 @@
 	line-height: 1.42857143;
 	color: white;
 	white-space: nowrap;
+}
+
+.dropdown-white {
+	bottom: -89px;
 }
 
 .dropdown-menu > li > a:hover {
