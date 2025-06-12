@@ -1,414 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Polaris Share</title>
-		<meta
-			charset="utf-8"
-			name="viewport"
-			content="width=device-width, initial-scale=1"
-		/>
-		<link
-			href="assets/css/common.css"
-			media="screen"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			href="assets/css/index.css"
-			media="screen"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./favicon-16x16.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="192x192"
-			href="./android-chrome-192x192.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="512x512"
-			href="./android-chrome-512x512.png"
-		/>
-		<meta name="theme-color" content="#ffffff" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			(function () {
-				"use strict";
+  <head>
+    <title>Polaris Share</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      href="assets/css/common.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/index.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./android-chrome-512x512.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        "use strict";
 
-				$(function () {
-					//$("#header").load("header.html");
-					$("#footer").load("footer.html");
-				});
-			})();
-		</script>
-	</head>
+        $(function () {
+          //$("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+      })();
+    </script>
+  </head>
 
-	<body>
-		<header id="header">
-			<div class="container d-flex ">
-				<div class="h_firstSection col-6 col-xl-3">
-					<a href="index.html" title="Link to Main page">
-						<img class="h_logo" src="assets/img/logo/logo_blue.png" alt="polaris share logo" />
-					</a>
-				</div>
-				<div class="h_secondSection col-xl-6 d-flex">
-					<a href="summary.html" id="h_summary" title="link to Summary">Summary</a>
-					<a href="service.html" id="h_service" title="link to Service">Service</a>
-					<a href="technology.html" id="h_technology" title="link to Technology">Technology</a>
-					<a href="alliance.html" id="h_alliance" title="link to Alliance">Alliance</a>
-					<a href="press.html" id="h_press" title="link to Press">Press</a>
-				</div>
-				<div class="h_thirdSection col-6 col-xl-3 d-flex">
+  <body>
+    <header id="header">
+      <div class="container d-flex">
+        <div class="h_firstSection col-6 col-xl-3">
+          <a href="index.html" title="Link to Main page">
+            <img
+              class="h_logo"
+              src="assets/img/logo/logo_blue.png"
+              alt="polaris share logo"
+            />
+          </a>
+        </div>
+        <div class="h_secondSection col-xl-6 d-flex">
+          <a href="summary.html" id="h_summary" title="link to Summary"
+            >Summary</a
+          >
+          <a href="service.html" id="h_service" title="link to Service"
+            >Service</a
+          >
+          <a href="technology.html" id="h_technology" title="link to Technology"
+            >Technology</a
+          >
+          <a href="alliance.html" id="h_alliance" title="link to Alliance"
+            >Alliance</a
+          >
+          <a href="press.html" id="h_press" title="link to Press">Press</a>
+        </div>
+        <div class="h_thirdSection col-6 col-xl-3 d-flex">
           <div class="dropdown">
-              <button class="btn btn-primary btn-whitepaper dropdown-toggle" type="button" data-toggle="dropdown">
+            <button
+              class="btn btn-primary btn-whitepaper dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+            >
+              Whitepaper
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-white">
+              <li>
+                <a
+                  href="https://decompany.notion.site/Polaris-Share-2-1-White-Paper-ENG-24bcd342f2974c63a6378ead76050185"
+                  class="h_whitepaper_list"
+                  target="_blank"
+                  title="link to White paper 2.1"
+                  >Whitepaper 2.1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_2.0_ENG.pdf"
+                  class="h_whitepaper_list"
+                  target="_blank"
+                  title="link to White paper 2.0"
+                  >Whitepaper 2.0</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_1.2_ENG.pdf"
+                  class="h_whitepaper_list"
+                  target="_blank"
+                  title="link to White paper 1.2"
+                  >Whitepaper 1.2</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a class="h_language" href="./kr/summary.html" title="Change language"
+            >KOREAN</a
+          >
+          <div class="m_bugger" id="menuBtn"><span></span></div>
+        </div>
+
+        <div id="menu">
+          <div class="m_wrapper" id="mWrapper"></div>
+          <div class="m_container" id="mContainer">
+            <div class="m_title">
+              Category
+
+              <div class="m_close" id="menuCloseBtn"><span></span></div>
+            </div>
+            <div class="m_list">
+              <div class="m_listItem">
+                <a
+                  href="summary.html"
+                  id="h_summary_sub"
+                  title="link to Summary"
+                  >Summary</a
+                >
+              </div>
+              <div class="m_listItem">
+                <a
+                  href="service.html"
+                  id="h_service_sub"
+                  title="link to Service"
+                  >Service</a
+                >
+              </div>
+              <div class="m_listItem">
+                <a
+                  href="technology.html"
+                  id="h_technology_sub"
+                  title="link to Technology"
+                  >Technology</a
+                >
+              </div>
+              <div class="m_listItem">
+                <a
+                  href="alliance.html"
+                  id="h_alliance_sub"
+                  title="link to Alliance"
+                  >Alliance</a
+                >
+              </div>
+              <div class="m_listItem">
+                <a href="press.html" id="h_press_sub" title="link to Press"
+                  >Press</a
+                >
+              </div>
+            </div>
+            <div class="d-flex m_listSub">
+              <div class="dropdown">
+                <button
+                  class="btn btn-primary btn-whitepaper dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                >
                   Whitepaper
                   <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu dropdown-white">
-                  <li><a href="https://documents.polarishare.io/whitepaper/eng" class="h_whitepaper_list" target="_blank" title="link to White paper 2.1">Whitepaper 2.1</a></li>
-                  <li><a href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_2.0_ENG.pdf" class="h_whitepaper_list" target="_blank" title="link to White paper 2.0">Whitepaper 2.0</a></li>
-                  <li><a href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_1.2_ENG.pdf" class="h_whitepaper_list" target="_blank" title="link to White paper 1.2">Whitepaper 1.2</a></li>
-              </ul>            
-          </div>
-					<a class="h_language" href="./kr/summary.html" title="Change language">KOREAN</a>
-					<div class="m_bugger" id="menuBtn"><span></span></div>
-				</div>
-			
-			
-				<div id="menu">
-					<div class="m_wrapper" id="mWrapper"></div>
-					<div class="m_container" id="mContainer">
-						<div class="m_title">
-							Category
-			
-							<div class="m_close" id="menuCloseBtn"><span></span></div>
-						</div>
-						<div class="m_list">
-							<div class="m_listItem">
-								<a href="summary.html" id="h_summary_sub" title="link to Summary">Summary</a>
-							</div>
-							<div class="m_listItem">
-								<a href="service.html" id="h_service_sub" title="link to Service">Service</a>
-							</div>
-							<div class="m_listItem">
-								<a href="technology.html" id="h_technology_sub" title="link to Technology">Technology</a>
-							</div>
-							<div class="m_listItem">
-								<a href="alliance.html" id="h_alliance_sub" title="link to Alliance">Alliance</a>
-							</div>
-							<div class="m_listItem">
-								<a href="press.html" id="h_press_sub" title="link to Press">Press</a>
-							</div>
-						</div>
-						<div class="d-flex m_listSub">
-							<div class="dropdown">
-                  <button class="btn btn-primary btn-whitepaper dropdown-toggle" type="button" data-toggle="dropdown">
-                      Whitepaper
-                      <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu dropdown-white">
-                      <li><a href="https://documents.polarishare.io/whitepaper/eng" class="h_whitepaper_list" target="_blank" title="link to White paper 2.1">Whitepaper 2.1</a></li>
-                      <li><a href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_2.0_ENG.pdf" class="h_whitepaper_list" target="_blank" title="link to White paper 2.0">Whitepaper 2.0</a></li>
-                      <li><a href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_1.2_ENG.pdf" class="h_whitepaper_list" target="_blank" title="link to White paper 1.2">Whitepaper 1.2</a></li>
-                  </ul>            
+                </button>
+                <ul class="dropdown-menu dropdown-white">
+                  <li>
+                    <a
+                      href="https://decompany.notion.site/Polaris-Share-2-1-White-Paper-ENG-24bcd342f2974c63a6378ead76050185"
+                      class="h_whitepaper_list"
+                      target="_blank"
+                      title="link to White paper 2.1"
+                      >Whitepaper 2.1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_2.0_ENG.pdf"
+                      class="h_whitepaper_list"
+                      target="_blank"
+                      title="link to White paper 2.0"
+                      >Whitepaper 2.0</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://decompanyio.github.io/whitepaper/Polaris_Share_Whitepaper_1.2_ENG.pdf"
+                      class="h_whitepaper_list"
+                      target="_blank"
+                      title="link to White paper 1.2"
+                      >Whitepaper 1.2</a
+                    >
+                  </li>
+                </ul>
               </div>
-							<a class="h_language" href="./kr/summary.html" title="Change language">KOREAN</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z1B94H5EF"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-			
-			  gtag('config', 'G-4Z1B94H5EF');
-			</script>
-			
-			<script type="text/javascript">
-				(function () {
-					"use strict";
-			
-					$(function () {
-			
-						let pageName = location.href.split('/')[3]
-						let page = pageName.split('.')[0]
-			
-						switch (page) {
-							case 'summary' :
-								$('#h_summary').css('color', '#2b80eb')
-								$('#h_summary_sub').css('color', '#2b80eb')
-								break
-			
-							case 'service' :
-								$('#h_service').css('color', '#2b80eb')
-								$('#h_service_sub').css('color', '#2b80eb')
-								break
-			
-							case 'technology' :
-								$('#h_technology').css('color', '#2b80eb')
-								$('#h_technology_sub').css('color', '#2b80eb')
-								break
-			
-							case 'alliance' :
-								$('#h_alliance').css('color', '#2b80eb')
-								$('#h_alliance_sub').css('color', '#2b80eb')
-								break
-			
-							case 'press' :
-								$('#h_press').css('color', '#2b80eb')
-								$('#h_press_sub').css('color', '#2b80eb')
-								break
-						}
-			
-						// menu slide
-			
-						$("#menuBtn").click(function () {
-							$('#menu').css('display', 'block')
-							$('body').css('overflow', 'hidden')
-			
-							setTimeout(function () {
-								$('#mContainer').addClass('m_showContainer')
-								$('#mWrapper').addClass('m_showWrapper')
-							},100)
-						})
-			
-						$("#menuCloseBtn").click(function () {
-							$('#mContainer').removeClass('m_showContainer')
-							$('#mWrapper').removeClass('m_showWrapper')
-			
-							setTimeout(function () {
-								$('#menu').css('display', 'none')
-								$('body').css('overflow', 'auto')
-							},500)
-						})
-			
-					});
-				})();
-			</script>
-		</header>
+              <a
+                class="h_language"
+                href="./kr/summary.html"
+                title="Change language"
+                >KOREAN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div id="container">
-			<section class="s_firstSection summary">
-				<div class="container">
-					<div class="common_banner_title">Summary</div>
-					<div class="common_banner_desc">
-						Huge numbers of documents containing important information are left
-						unused  in clouds or on hard drives.
-						<br />
-						Many knowledge producers are unnecessarily repeating work on the
-						same subject
-						<br />
-						because they cannot find the appropriate knowledge or access such
-						knowledge.
-						<br />
-						<br />
-						Knowledge producers are losing the opportunities to gain more
-						profits from sharing and selling their knowledge.
-					</div>
-				</div>
-			</section>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-4Z1B94H5EF"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-			<section class="s_secondSection summary">
-				<div class="container">
-					<div class="sm_title">POLARIS SHARE <span>VISION</span></div>
-					<div class="s_contentsWrapper2">
-						<div class="s_contentsText">
-							<div class="s_title">
-								Distributed Incentive Specialized Knowledge Trading System
-								<div class="s_underline"></div>
-							</div>
-							<div class="s_contentsDesc">
-								POLARIS SHARE returns the value of knowledge,
-								<br />
-								which documents, and networks have, to knowledge producers and
-								other users.
-								<br />
-								Knowledge producers earn rewards by sharing or selling documents
-								on the POLARIS SHARE with free of charge or low trading fees.
-								<br />
-								Contents are curated by voters who have tokens, not by
-								centralized companies.
-								<br />
-								The users have benefits from more diverse and quality contents
-								shared by knowledge producers.
-							</div>
-						</div>
-						<div class="s_imgContainer">
-							<img
-								src="assets/img/summary/summary_vision_en.png"
-								alt="summary image"
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
+        gtag("config", "G-4Z1B94H5EF");
+      </script>
 
-			<section class="sm_lastSection">
-				<div class="container summary">
-					<div class="sm_lastTitle">
-						Quickly attracting users and documents
-						<br />
-						Organizing accessible contents
-					</div>
-					<div class="sm_lastSubTitle">
-						<span>1,000 million</span> documents /
-						<span>100 million</span> users / <span>4% compensation</span> for
-						total token amount
-					</div>
-					<div class="sm_slides_wrapper">
-						<div class="sm_slides">
-							<div class="slide">
-								<h3>Attracting Users</h3>
-								<p>
-									We have a plan to make 100 million users of the Polaris Office
-									who have about 1 billion documents as priming water for
-									boosting up at the initial stage. In order to attract these
-									active users and their documents to the knowledge ecosystem,
-									we will pay 4% of the total token amount(to be issued) for
-									them as compensation.
-								</p>
+      <script type="text/javascript">
+        (function () {
+          "use strict";
 
-								<a href="alliance.html" class="sm_polarisshare"
-									>WHY POLARIS SHARE
-								</a>
-							</div>
-							<div class="slide">
-								<h3>Inviting documents</h3>
-								<p>
-									In the early stages of the system, users earn rewards from
-									token inflation, which it halves every year. As the system
-									grows by attracting more users and contents, the unit price of
-									tokens will rise further, and users will also be rewarded from
-									related advertisements. (the Slideshare is currently ranked by
-									Alexa as the world's 159th largest site with traffic volume)
-								</p>
+          $(function () {
+            let pageName = location.href.split("/")[3];
+            let page = pageName.split(".")[0];
 
-								<a href="alliance.html" class="sm_polarisshare"
-									>WHY POLARIS SHARE
-								</a>
-							</div>
-							<div class="slide">
-								<h3>Organizing contents</h3>
-								<p>
-									To identify better documents is the key element for success in
-									a situation where more and more documents are shared. The
-									curator uses tokens to vote for documents for four weeks and
-									considers documents with more votes as better documents.
-									During the four-week voting period, curators earn greater
-									rewards if the documents they voted for are popular with more
-									traffic and sales. It gives curators the motivation to find
-									better documents.
-								</p>
+            switch (page) {
+              case "summary":
+                $("#h_summary").css("color", "#2b80eb");
+                $("#h_summary_sub").css("color", "#2b80eb");
+                break;
 
-								<a href="alliance.html" class="sm_polarisshare"
-									>WHY POLARIS SHARE
-								</a>
-							</div>
-						</div>
-						<div class="slider">
-							<div id="slider-dots"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+              case "service":
+                $("#h_service").css("color", "#2b80eb");
+                $("#h_service_sub").css("color", "#2b80eb");
+                break;
 
-		<script type="text/javascript">
-			var slideIndex = 1;
-			var intervalId;
+              case "technology":
+                $("#h_technology").css("color", "#2b80eb");
+                $("#h_technology_sub").css("color", "#2b80eb");
+                break;
 
-			function plusDivs(n) {
-				showDivs((slideIndex += n));
-			}
+              case "alliance":
+                $("#h_alliance").css("color", "#2b80eb");
+                $("#h_alliance_sub").css("color", "#2b80eb");
+                break;
 
-			function goToDiv(n) {
-				window.clearInterval(intervalId);
-				showDivs((slideIndex = n));
-				intervalId = window.setInterval(autoSlide, 7000);
-			}
+              case "press":
+                $("#h_press").css("color", "#2b80eb");
+                $("#h_press_sub").css("color", "#2b80eb");
+                break;
+            }
 
-			function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName("slide");
-				//get the list of dots
-				var y = document.getElementById("slider-dots").children;
-				if (n > x.length) {
-					slideIndex = 1;
-				}
-				if (n < 1) {
-					slideIndex = x.length;
-				}
-				for (i = 0; i < x.length; i++) {
-					x[i].classList.remove("active");
-					//remove .active from all dots
-					y[i].classList.remove("active");
-				}
-				x[slideIndex - 1].classList.add("active");
-				//add .active to the selected dot
-				y[slideIndex - 1].classList.add("active");
-			}
+            // menu slide
 
-			function generateDots() {
-				var i;
-				var x = document.getElementsByClassName("slide");
-				for (i = 0; i < x.length; i++) {
-					var dotNumber = i + 1;
-					var dot = document.createElement("span");
-					dot.innerHTML =
-						'<div class="js-dot" onclick="goToDiv(' +
-						dotNumber +
-						')">' +
-						"</div>";
-					document.getElementById("slider-dots").appendChild(dot);
-				}
-			}
-			generateDots();
-			//placed AFTER generateDots()
-			showDivs(slideIndex);
+            $("#menuBtn").click(function () {
+              $("#menu").css("display", "block");
+              $("body").css("overflow", "hidden");
 
-			function autoSlide() {
-				var newSlideIndex;
-				if (slideIndex === 2) {
-					newSlideIndex = 0;
-				} else {
-					newSlideIndex = slideIndex + 1;
-				}
-				goToDiv(newSlideIndex);
-			}
+              setTimeout(function () {
+                $("#mContainer").addClass("m_showContainer");
+                $("#mWrapper").addClass("m_showWrapper");
+              }, 100);
+            });
 
-			intervalId = window.setInterval(autoSlide, 7000);
-		</script>
+            $("#menuCloseBtn").click(function () {
+              $("#mContainer").removeClass("m_showContainer");
+              $("#mWrapper").removeClass("m_showWrapper");
 
-		<footer id="footer"></footer>
-	</body>
+              setTimeout(function () {
+                $("#menu").css("display", "none");
+                $("body").css("overflow", "auto");
+              }, 500);
+            });
+          });
+        })();
+      </script>
+    </header>
+
+    <div id="container">
+      <section class="s_firstSection summary">
+        <div class="container">
+          <div class="common_banner_title">Summary</div>
+          <div class="common_banner_desc">
+            Huge numbers of documents containing important information are left
+            unused  in clouds or on hard drives.
+            <br />
+            Many knowledge producers are unnecessarily repeating work on the
+            same subject
+            <br />
+            because they cannot find the appropriate knowledge or access such
+            knowledge.
+            <br />
+            <br />
+            Knowledge producers are losing the opportunities to gain more
+            profits from sharing and selling their knowledge.
+          </div>
+        </div>
+      </section>
+
+      <section class="s_secondSection summary">
+        <div class="container">
+          <div class="sm_title">POLARIS SHARE <span>VISION</span></div>
+          <div class="s_contentsWrapper2">
+            <div class="s_contentsText">
+              <div class="s_title">
+                Distributed Incentive Specialized Knowledge Trading System
+                <div class="s_underline"></div>
+              </div>
+              <div class="s_contentsDesc">
+                POLARIS SHARE returns the value of knowledge,
+                <br />
+                which documents, and networks have, to knowledge producers and
+                other users.
+                <br />
+                Knowledge producers earn rewards by sharing or selling documents
+                on the POLARIS SHARE with free of charge or low trading fees.
+                <br />
+                Contents are curated by voters who have tokens, not by
+                centralized companies.
+                <br />
+                The users have benefits from more diverse and quality contents
+                shared by knowledge producers.
+              </div>
+            </div>
+            <div class="s_imgContainer">
+              <img
+                src="assets/img/summary/summary_vision_en.png"
+                alt="summary image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sm_lastSection">
+        <div class="container summary">
+          <div class="sm_lastTitle">
+            Quickly attracting users and documents
+            <br />
+            Organizing accessible contents
+          </div>
+          <div class="sm_lastSubTitle">
+            <span>1,000 million</span> documents /
+            <span>100 million</span> users / <span>4% compensation</span> for
+            total token amount
+          </div>
+          <div class="sm_slides_wrapper">
+            <div class="sm_slides">
+              <div class="slide">
+                <h3>Attracting Users</h3>
+                <p>
+                  We have a plan to make 100 million users of the Polaris Office
+                  who have about 1 billion documents as priming water for
+                  boosting up at the initial stage. In order to attract these
+                  active users and their documents to the knowledge ecosystem,
+                  we will pay 4% of the total token amount(to be issued) for
+                  them as compensation.
+                </p>
+
+                <a href="alliance.html" class="sm_polarisshare"
+                  >WHY POLARIS SHARE
+                </a>
+              </div>
+              <div class="slide">
+                <h3>Inviting documents</h3>
+                <p>
+                  In the early stages of the system, users earn rewards from
+                  token inflation, which it halves every year. As the system
+                  grows by attracting more users and contents, the unit price of
+                  tokens will rise further, and users will also be rewarded from
+                  related advertisements. (the Slideshare is currently ranked by
+                  Alexa as the world's 159th largest site with traffic volume)
+                </p>
+
+                <a href="alliance.html" class="sm_polarisshare"
+                  >WHY POLARIS SHARE
+                </a>
+              </div>
+              <div class="slide">
+                <h3>Organizing contents</h3>
+                <p>
+                  To identify better documents is the key element for success in
+                  a situation where more and more documents are shared. The
+                  curator uses tokens to vote for documents for four weeks and
+                  considers documents with more votes as better documents.
+                  During the four-week voting period, curators earn greater
+                  rewards if the documents they voted for are popular with more
+                  traffic and sales. It gives curators the motivation to find
+                  better documents.
+                </p>
+
+                <a href="alliance.html" class="sm_polarisshare"
+                  >WHY POLARIS SHARE
+                </a>
+              </div>
+            </div>
+            <div class="slider">
+              <div id="slider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript">
+      var slideIndex = 1;
+      var intervalId;
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function goToDiv(n) {
+        window.clearInterval(intervalId);
+        showDivs((slideIndex = n));
+        intervalId = window.setInterval(autoSlide, 7000);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        //get the list of dots
+        var y = document.getElementById("slider-dots").children;
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].classList.remove("active");
+          //remove .active from all dots
+          y[i].classList.remove("active");
+        }
+        x[slideIndex - 1].classList.add("active");
+        //add .active to the selected dot
+        y[slideIndex - 1].classList.add("active");
+      }
+
+      function generateDots() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          var dotNumber = i + 1;
+          var dot = document.createElement("span");
+          dot.innerHTML =
+            '<div class="js-dot" onclick="goToDiv(' +
+            dotNumber +
+            ')">' +
+            "</div>";
+          document.getElementById("slider-dots").appendChild(dot);
+        }
+      }
+      generateDots();
+      //placed AFTER generateDots()
+      showDivs(slideIndex);
+
+      function autoSlide() {
+        var newSlideIndex;
+        if (slideIndex === 2) {
+          newSlideIndex = 0;
+        } else {
+          newSlideIndex = slideIndex + 1;
+        }
+        goToDiv(newSlideIndex);
+      }
+
+      intervalId = window.setInterval(autoSlide, 7000);
+    </script>
+
+    <footer id="footer"></footer>
+  </body>
 </html>
